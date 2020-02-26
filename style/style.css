@@ -1,0 +1,565 @@
+@font-face {
+  font-family: nunito-extra-light;
+  font-weight: 200;
+  src: local("Nunito"), url("../fonts/Nunito-ExtraLight.ttf");
+}
+@font-face {
+  font-family: nunito-extra-light-italic;
+  font-weight: 200;
+  src: local("Nunito"), url("../fonts/Nunito-ExtraLightItalic.ttf");
+}
+@font-face {
+  font-family: nunito-light;
+  font-weight: 300;
+  src: local("Nunito"), url("../fonts/Nunito-Light.ttf");
+}
+@font-face {
+  font-family: nunito-light-italic;
+  font-weight: 300;
+  src: local("Nunito"), url("../fonts/Nunito-LightItalic.ttf");
+}
+@font-face {
+  font-family: nunito-regular;
+  font-weight: 400;
+  src: local("Nunito"), url("../fonts/Nunito-Regular.ttf");
+}
+@font-face {
+  font-family: nunito-semi-bold;
+  font-weight: 600;
+  src: local("Nunito"), url("../fonts/Nunito-SemiBold.ttf");
+}
+@font-face {
+  font-family: nunito-semi-bold-italic;
+  font-weight: 600;
+  src: local("Nunito"), url("../fonts/Nunito-SemiBoldItalic.ttf");
+}
+@font-face {
+  font-family: nunito-bold;
+  font-weight: 700;
+  src: local("Nunito"), url("../fonts/Nunito-Bold.ttf");
+}
+@font-face {
+  font-family: nunito-bold-italic;
+  font-weight: 700;
+  src: local("Nunito"), url("../fonts/Nunito-BoldItalic.ttf");
+}
+@font-face {
+  font-family: nunito-extra-bold;
+  font-weight: 800;
+  src: local("Nunito"), url("../fonts/Nunito-ExtraBold.ttf");
+}
+@font-face {
+  font-family: nunito-extra-bold-italic;
+  font-weight: 800;
+  src: local("Nunito"), url("../fonts/Nunito-ExtraBoldItalic.ttf");
+}
+@font-face {
+  font-family: nunito-black;
+  font-weight: 900;
+  src: local("Nunito"), url("../fonts/Nunito-Black.ttf");
+}
+@font-face {
+  font-family: nunito-black-italic;
+  font-weight: 900;
+  src: local("Nunito"), url("../fonts/Nunito-BlackItalic.ttf");
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #353945;
+}
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: "nunito-light", sans-serif;
+  font-weight: 300;
+}
+header {
+  width: 100%;
+  margin: 0 0 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.header_block {
+  position: absolute;
+  top: 0;
+  position: fixed;
+  background-color: inherit;
+  width: 1280px;
+  min-height: 50px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 1;
+}
+.logo_main {
+  width: 300px;
+  height: 50px;
+  cursor: pointer;
+  /*меняется курсор при наведении на блок*/
+}
+.logo_main a {
+  text-decoration: none;
+  color: #353945;
+}
+.logo_img {
+  width: 60px;
+  height: 60px;
+  margin: 0 0 0 30px;
+  float: left;
+  border-radius: 50%;
+  background-image: url(../image/logo_3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.logo_text {
+  width: 100%;
+  height: 50px;
+  color: #353945;
+}
+.logo_text span {
+  display: block;
+}
+.logo_text_1 {
+  color: #f1ae6b;
+  font-size: 22px;
+  text-align: center;
+  font-family: "nunito-bold", sans-serif;
+  font-weight: 700;
+}
+.logo_text_2,
+.logo_text_3 {
+  font-size: 10px;
+  text-align: center;
+  color: #f1ae6b;
+}
+.logo_text_1,
+.logo_text_2,
+.logo_text_3 {
+  text-shadow: 1px 1px 3px #353945;
+}
+.nav_block {
+  min-width: 500px;
+  height: 50px;
+}
+.nav_block ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.nav_link {
+  width: auto;
+  border: 1px solid inherit;
+  margin: 0 10px 0 0;
+  height: 35px;
+  padding: 6px 0;
+  border: 1px solid #353945;
+  border-radius: 8px;
+  text-transform: lowercase;
+  background-color: #353945;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.nav_link:hover {
+  -webkit-box-shadow: 3px 3px 5px #353945;
+          box-shadow: 3px 3px 5px #353945;
+  border: 1px solid #f1ae6b;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.nav_link:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.nav_link a {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #f1ae6b;
+  font-family: "nunito-semi-bold", sans-serif;
+  font-weight: 600;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.kinez {
+  width: 100%;
+  min-height: 700px;
+}
+.kinez_up {
+  position: relative;
+  width: 100%;
+  min-height: 700px;
+  margin: 0 0 0 0;
+  background-color: #ccc;
+  background-image: url(../image/Delphine-Couturier-Presentation-3.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+  z-index: 0;
+}
+.kinez_h1 {
+  display: block;
+  margin: -600px 0 0 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: opacity(1);
+          filter: opacity(1);
+  color: #000;
+  font-weight: 700;
+}
+.kinez_h4 {
+  width: 80%;
+  display: block;
+  color: #000;
+  font-weight: 700;
+  margin: 0 auto;
+  text-indent: 15px;
+  text-align: justify;
+  -webkit-filter: opacity(1);
+          filter: opacity(1);
+}
+.kinez_h4_off {
+  /*display  : none;*/
+  width: 75%;
+  float: right;
+  margin: 0 0 20px 0;
+  -webkit-filter: opacity(1);
+          filter: opacity(1);
+  color: #000;
+  font-weight: 700;
+}
+.kinez_h4_on {
+  cursor: pointer;
+  text-align: left;
+  color: #000;
+  font-weight: 700;
+}
+.kinez_h4_on:hover span {
+  display: block;
+  color: #000;
+  font-weight: 700;
+}
+.heal {
+  position: relative;
+  width: 100%;
+  min-height: 700px;
+  margin: 0 0 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #353945;
+  z-index: 0;
+}
+.heal_header {
+  width: 100%;
+  height: 75px;
+}
+.heal_block {
+  position: relative;
+  width: 50%;
+  min-height: 700px;
+  margin: 0 50% 50px 0;
+  background-color: #eee;
+  background-image: url(../image/microterapia.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0 350px 350px 0;
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+  z-index: -1;
+}
+.heal_text {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 800px;
+  margin: -800px 0 0 0;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+.heal_h1 {
+  display: block;
+  text-align: center;
+  margin: 70px 0 0 0;
+}
+.heal_h4 {
+  display: block;
+  text-indent: 15px;
+}
+.heal_left {
+  width: 100%;
+}
+.heal_left_list {
+  list-style-type: none;
+  list-style-image: url("../image/logo_2.png");
+}
+.doctor {
+  width: 100%;
+  min-height: 800px;
+  background-color: #353945;
+  /*margin          : -50px 0 0 0;*/
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.doctor_h1 {
+  display: block;
+  text-align: center;
+  margin: 70px 0 20px 0;
+  color: #fff;
+}
+.doctor_h3 {
+  display: block;
+  text-indent: 15px;
+}
+.doctor_centre {
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  background-color: #f1ae6b;
+  border-radius: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 50px;
+}
+.doctor_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  width: 800px;
+  height: 300px;
+  margin: 20px 0 0 50px;
+  border: 2px solid #f1ae6b;
+  background-color: #353945;
+  border-radius: 150px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 50px;
+}
+.doctor_img {
+  margin: 1px 0 1px 1px;
+  width: 294px;
+  height: 294px;
+  background-image: url("../image/Лихачев_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 147px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.doctor_left_txt {
+  color: #f1ae6b;
+  width: 400px;
+}
+.doctor_left_txt p {
+  font-size: 16px;
+  padding: 20px 0 0 10px;
+  text-indent: 20px;
+  margin-top: -20px;
+  margin-left: 20px;
+}
+.information {
+  width: 100%;
+  min-height: 700px;
+  background-color: #353945;
+  color: #fff;
+  margin: -50px 0 0 0;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.information_h1 {
+  display: block;
+  text-align: center;
+  margin: 70px 0 0 0;
+}
+.information_h3 {
+  display: block;
+  text-indent: 15px;
+}
+.information_left {
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid #f1ae6b;
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-indent: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 50px;
+}
+.information_right {
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid #f1ae6b;
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-indent: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 50px;
+}
+.comments {
+  width: 100%;
+  min-height: 700px;
+  background-color: #353945;
+  color: #fff;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.comments_h1 {
+  display: block;
+  text-align: center;
+  margin: 70px 0 0 0;
+}
+.comments_h3 {
+  display: block;
+  text-align: center;
+  text-indent: 15px;
+}
+.comments_block_1,
+.comments_block_2 {
+  width: 60%;
+  margin: 0 auto;
+  border: 2px solid #f1ae6b;
+  border-radius: 15px;
+  padding: 10px 20px;
+  text-indent: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.comments_block_1 span,
+.comments_block_2 span {
+  font-size: 16px;
+  font-style: italic;
+}
+.contacts {
+  width: 100%;
+  min-height: 700px;
+  background-color: #353945;
+  color: #ffffff;
+  margin: -20px 0 0 0;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.contacts_h1 {
+  display: block;
+  text-align: center;
+}
+.contacts_block {
+  text-align: center;
+}
+.contacts_form {
+  margin-top: 50px;
+}
+.form_h1 {
+  display: block;
+  text-align: center;
+}
+.form_send {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: end;
+  border: 2px solid #f1ae6b;
+  border-radius: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.btn_send {
+  margin-bottom: 30px;
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  background-color: #353945;
+  border: 2px solid #f1ae6b;
+  color: #f1ae6b;
+  font-size: 16px;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-transform: uppercase;
+}
+.btn_send:hover {
+  background-color: #f1ae6b;
+  color: #353945;
+}
+.btn_send:active {
+  background-color: #f1ae6b;
+  color: #353945;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+.form_send label {
+  color: #f1ae6b;
+  font-family: "nunito-light", sans-serif;
+  font-weight: 300;
+  margin-right: 20px;
+}
+.form_send input {
+  width: 250px;
+  height: 30px;
+  margin-right: 100px;
+  margin-top: 10px;
+  background-color: #353945;
+  border: 2px solid #f1ae6b;
+  border-radius: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #ffffff;
+  outline: none;
+}
+.field_input {
+  text-indent: 20px;
+}
+.footer_block {
+  width: 100%;
+  min-height: 50px;
+  background-color: #333;
+  margin: -20px 0 0 0;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  text-align: center;
+}
+.footer_block a {
+  text-decoration: none;
+  color: #555;
+  cursor: pointer;
+}
+.footer_block a:hover {
+  color: #ccc;
+}
