@@ -70,7 +70,7 @@ body {
   background-color: #353945;
 }
 body {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
   font-family: "nunito-light", sans-serif;
   font-weight: 300;
@@ -86,7 +86,7 @@ header {
   top: 0;
   position: fixed;
   background-color: inherit;
-  width: 1280px;
+  width: 100%;
   min-height: 50px;
   margin: 0 auto;
   display: -webkit-box;
@@ -204,12 +204,12 @@ header {
 }
 .kinez {
   width: 100%;
-  min-height: 700px;
+  min-height: 970px;
 }
 .kinez_up {
   position: relative;
   width: 100%;
-  min-height: 700px;
+  min-height: 970px;
   margin: 0 0 0 0;
   background-color: #ccc;
   background-image: url(../image/Delphine-Couturier-Presentation-3.jpeg);
@@ -222,7 +222,7 @@ header {
 }
 .kinez_h1 {
   display: block;
-  margin: -600px 0 0 0;
+  margin: -800px 0 0 0;
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -451,7 +451,7 @@ header {
 .comments_block_1,
 .comments_block_2 {
   width: 60%;
-  margin: 0 auto;
+  margin: 20px auto;
   border: 2px solid #f1ae6b;
   border-radius: 15px;
   padding: 10px 20px;
