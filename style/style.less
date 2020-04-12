@@ -540,11 +540,11 @@ header {
     color: #ccc;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
 
     body,
     html {
-        width: 500px;
+        width: 480px;
     }
 
     .header_block {
@@ -564,13 +564,11 @@ header {
 
     .logo_main a {
         text-decoration: none;
-        color          : #fff;
-        /*@colorTextLogo;*/
+        color          : @colorTextLogo;
     }
 
     .logo_text_1 {
-        color: #fff;
-        /*@colorTextBTN;*/
+        color      : @colorTextBTN;
         font-size  : 14px;
         text-align : center;
         font-family: "nunito-bold", sans-serif;
@@ -585,8 +583,8 @@ header {
     }
 
     .nav_block {
-
-        min-width: 60%;
+        display  : none;
+        min-width: 70%;
         height   : 50px;
     }
 }

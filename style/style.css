@@ -563,10 +563,10 @@ header {
 .footer_block a:hover {
   color: #ccc;
 }
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   body,
   html {
-    width: 500px;
+    width: 480px;
   }
   .header_block {
     position: absolute;
@@ -583,12 +583,10 @@ header {
   }
   .logo_main a {
     text-decoration: none;
-    color: #fff;
-    /*@colorTextLogo;*/
+    color: #353945;
   }
   .logo_text_1 {
-    color: #fff;
-    /*@colorTextBTN;*/
+    color: #f1ae6b;
     font-size: 14px;
     text-align: center;
     font-family: "nunito-bold", sans-serif;
@@ -601,7 +599,8 @@ header {
     color: #f1ae6b;
   }
   .nav_block {
-    min-width: 60%;
+    display: none;
+    min-width: 70%;
     height: 50px;
   }
 }
