@@ -481,6 +481,13 @@ header {
 .contacts_block {
   text-align: center;
 }
+.contacts_block a {
+  color: #fff;
+  text-decoration: none;
+}
+.contacts_block a:hover {
+  color: #f1ae6b;
+}
 .contacts_form {
   margin-top: 50px;
 }
@@ -566,7 +573,7 @@ header {
 @media (max-width: 480px) {
   body,
   html {
-    width: 480px;
+    width: 479px;
   }
   .header_block {
     position: absolute;
@@ -585,6 +592,9 @@ header {
     text-decoration: none;
     color: #353945;
   }
+  .logo_text {
+    margin: 0 0 0 10px;
+  }
   .logo_text_1 {
     color: #f1ae6b;
     font-size: 14px;
@@ -602,5 +612,71 @@ header {
     display: none;
     min-width: 70%;
     height: 50px;
+  }
+  .heal_block {
+    width: 80%;
+    border-radius: 0 350px 350px 0;
+  }
+  .doctor_left {
+    width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: left;
+    min-height: 300px;
+    margin: 20px 0 0 20px;
+    border: 2px solid #f1ae6b;
+    background-color: #353945;
+    border-radius: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-bottom: 50px;
+  }
+  .doctor_img {
+    display: none;
+  }
+  .doctor_left_txt h3 {
+    text-align: center;
+  }
+  .comments_block_1,
+  .comments_block_2 {
+    width: 80%;
+    margin: 10px auto;
+    border: 2px solid #f1ae6b;
+    border-radius: 15px;
+    padding: 10px 20px;
+    text-indent: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .form_send {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: end;
+    border: 2px solid #f1ae6b;
+    border-radius: 15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .form_send label {
+    display: block;
+    text-align: left;
+    color: #f1ae6b;
+    font-family: "nunito-light", sans-serif;
+    font-weight: 300;
+    margin: 0 0 0 20px;
+  }
+  .form_send input {
+    width: 250px;
+    height: 30px;
+    margin: 10px 45px 0 0;
+    background-color: #353945;
+    border: 2px solid #f1ae6b;
+    border-radius: 15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #ffffff;
+    outline: none;
   }
 }
